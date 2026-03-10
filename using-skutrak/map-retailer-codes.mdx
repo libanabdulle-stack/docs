@@ -1,0 +1,117 @@
+---
+title: "How to map retailer codes to your SKUs"
+sidebarTitle: "Map Retailer Codes"
+description: "Three ways to link retailer product codes to your internal definitions: CSV upload, Quick Match, or one at a time."
+icon: "link"
+---
+
+<Tip>
+Retailers use their own product codes. Tesco might call your hummus `5012345678`, Sainsbury's calls it `SA-HUM-001`. The Product Catalogue's Retailer Mappings page links each retailer code to your internal definition so the data shows up correctly in dashboards. Three options: upload a CSV of known mappings, use Quick Match for AI-assisted bulk mapping, or map products one by one.
+</Tip>
+
+## Who is this for?
+
+<Tabs>
+  <Tab title="Account Managers">
+    You probably won't map products yourself, but you should know how to spot gaps. If a product is missing from your Top Line report, check the Product Catalogue's unmapped list first. If it's there, map it or flag your data manager.
+  </Tab>
+  <Tab title="Supply Chain">
+    New retailer SKUs appear regularly — promotions, range extensions, pack changes. If they're not mapped, they don't appear in supply dashboards. Make mapping part of your new product launch process.
+  </Tab>
+  <Tab title="Data Managers">
+    This is your most frequent Product Catalogue task. Aim to clear the unmapped queue weekly. Quick Match handles most of it in under 5 minutes.
+  </Tab>
+</Tabs>
+
+## Where do I manage mappings?
+
+Go to **Product Catalogue > Retailer Mappings**. You'll see two tabs:
+
+| Tab | What it shows |
+|-----|--------------|
+| **Unmapped Retailer Products** | Products the retailer has reported that don't yet have a link to your internal definitions |
+| **Mappings** | All confirmed retailer-to-internal product links |
+
+## How do I upload mappings via CSV?
+
+Best for bulk onboarding or when your mappings already exist in a spreadsheet.
+
+<Steps>
+  <Step title="Prepare your CSV">
+    You need two columns at minimum: the retailer SKU code and your internal unique code. Both must already exist in SKUtrak — the retailer SKU from the data feed, and the unique code from your product definitions.
+  </Step>
+  <Step title="Upload the file">
+    Above the Unmapped Retailer Products table, click **Upload Matches**. Click **Upload File**, select your CSV, and click **Confirm**.
+  </Step>
+  <Step title="Map the columns">
+    Match each column in your file to the correct field. Click **Upload**.
+  </Step>
+  <Step title="Review the results">
+    A report shows how many mappings loaded successfully. If any failed, review the error messages, correct the affected rows, and re-upload.
+  </Step>
+</Steps>
+
+<Warning>
+If a retailer product already has a mapping, uploading a new one will overwrite it. Double-check your file if you're re-uploading to avoid accidentally breaking existing mappings.
+</Warning>
+
+## How do I use Quick Match?
+
+Best for weekly maintenance when new retailer products appear. SKUtrak suggests the most likely match based on descriptions, barcodes, and past patterns.
+
+<Steps>
+  <Step title="Filter your list">
+    Use the filters on the Unmapped Retailer Products page to narrow by retailer, category, or other criteria. This makes the queue more manageable.
+  </Step>
+  <Step title="Launch Quick Match">
+    Click **Quick Match** above the table. A pop-up shows the first unmapped retailer product with suggested matches from your product definitions.
+  </Step>
+  <Step title="Confirm or search">
+    Select the correct match from the suggestions. If it's not listed, use the search bar. Still can't find it? Click **Create Product** to add a new definition on the spot.
+  </Step>
+  <Step title="Move through the queue">
+    Click **Save and Next** to confirm and move on. Use **Skip** for any products you want to come back to later. When finished, click **Save and Close**.
+  </Step>
+</Steps>
+
+<Note>
+**Speed tip** — Filter by a single retailer before launching Quick Match. The suggestions are more accurate when the context is narrower, and you can clear an entire retailer's queue in one sitting.
+</Note>
+
+## How do I map a single product?
+
+Best for one-off corrections or when you spot a specific unmapped product.
+
+<Steps>
+  <Step title="Find the product">
+    In the Unmapped Retailer Products table, tick the checkbox next to the product you want to map.
+  </Step>
+  <Step title="Open the mapping pop-up">
+    In the blue table header, click **Match**. Choose the correct product definition from the suggestions, or search for it.
+  </Step>
+  <Step title="Confirm">
+    Click **Save**. The product moves to the Mappings table.
+  </Step>
+</Steps>
+
+## What if a mapping is wrong?
+
+If a retailer product was linked to the wrong internal definition, you have two options:
+
+- **Re-upload via CSV** — uploading a new mapping for the same retailer SKU overwrites the old one
+- **Delete and re-map** — remove the incorrect mapping from the Mappings table, then map the product again using Quick Match or the individual method
+
+<Check>
+You've mapped products correctly when: the Unmapped Retailer Products count drops, and the coverage percentage on the Product Catalogue page rises. Aim for 95%+ per retailer.
+</Check>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Exclude products" icon="ban" href="/using-skutrak/exclude-products">
+    Remove discontinued or irrelevant products from your dashboards.
+  </Card>
+  <Card title="Add pricing and terms" icon="sterling-sign" href="/using-skutrak/pricing-and-terms">
+    Attach list prices and costs to your product definitions.
+  </Card>
+</CardGroup>

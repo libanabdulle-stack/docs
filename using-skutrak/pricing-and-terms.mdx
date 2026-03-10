@@ -1,0 +1,86 @@
+---
+title: "How to add pricing and terms"
+sidebarTitle: "Pricing & Terms"
+description: "Add list prices, customer discounts, and production costs to your products. This data syncs to SKUtrak Promote for automatic promotional ROI calculations."
+icon: "sterling-sign"
+---
+
+<Tip>
+Adding pricing data to the Product Catalogue is optional but powerful. Once you add list prices, customer discounts, and production costs, SKUtrak Promote uses them automatically to calculate promotional ROI. Do it once per product and every future promotion analysis is pre-loaded with the right numbers.
+</Tip>
+
+## Who is this for?
+
+<Tabs>
+  <Tab title="Account Managers">
+    If you use SKUtrak Promote to plan or review promotions, your ROI calculations depend on the pricing data in the Product Catalogue. If the numbers look off in a promo review, check here first — missing or outdated prices are the most common cause.
+  </Tab>
+  <Tab title="Supply Chain">
+    Pricing and terms are less directly relevant to supply workflows, but cost price data can surface in profitability views. If your team uses margin analysis, accurate cost prices matter.
+  </Tab>
+  <Tab title="Data Managers">
+    You'll set this up once and update it when prices change (typically at each price review cycle). Bulk upload via CSV is the fastest way — keep a master pricing file and re-upload when terms change.
+  </Tab>
+</Tabs>
+
+## What pricing data can I add?
+
+Three categories of pricing data, all entered per-unit (not per case):
+
+| Category | What it is | Example |
+|----------|-----------|---------|
+| **List Price** | Your recommended selling price to the retailer | £1.50 |
+| **Cost Price** | Your cost to produce each unit | £0.45 |
+| **Customer Discount** | The agreed discount rate for a specific retailer | 15% off list price |
+
+Customer discounts can be set as a **percentage**, **fixed amount**, or **final price**. SKUtrak auto-calculates the breakdown based on whichever method you choose.
+
+## How do I add pricing data?
+
+<Steps>
+  <Step title="Upload your product definitions first">
+    Pricing attaches to product definitions. If you haven't uploaded your products yet, do that first. [How to upload product definitions →](/using-skutrak/product-definitions)
+  </Step>
+  <Step title="Navigate to Prices and Terms">
+    Go to **Product Catalogue > Prices and Terms**. Your uploaded products will appear here automatically.
+  </Step>
+  <Step title="Add prices individually or in bulk">
+    Two options:
+    - **Individual**: Click on a product SKU, then click **Add Price** or **Add Discount** to enter values manually
+    - **Bulk CSV**: Click **Upload Prices** or **Upload Discounts** to upload a file with pricing data for multiple products at once
+  </Step>
+  <Step title="Set effective dates (optional)">
+    Each price entry can have a start and end date. This is useful for time-limited pricing agreements or when you know a price change is coming. Products without dates default to "always active".
+  </Step>
+  <Step title="Verify the sync">
+    Pricing data automatically syncs with SKUtrak Promote. Check a product in Promote to confirm the prices appear correctly in your promotional ROI calculations.
+  </Step>
+</Steps>
+
+<Note>
+**All prices are per-unit.** If your spreadsheet has case prices, divide by the number of units per case before uploading. This is the most common upload error.
+</Note>
+
+## How do I check the status of my pricing data?
+
+The Prices and Terms page lets you filter by:
+
+- **Status**: None (no pricing set), Pending, Active, or Expired
+- **Retailer**: Filter customer discounts by specific retailer (depending on your plan)
+
+Use this to quickly find products that are missing pricing data or have expired terms that need updating.
+
+<Warning>
+Expired pricing data doesn't break dashboards, but it does affect SKUtrak Promote calculations. If your promotional ROI looks unexpectedly low or high, check whether the pricing terms have expired and need refreshing.
+</Warning>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Why product mappings matter" icon="link" href="/using-skutrak/product-mappings">
+    Understand how the Product Catalogue fits together and why clean data matters.
+  </Card>
+  <Card title="Manage product definitions" icon="pencil" href="/using-skutrak/product-definitions">
+    Add or edit your internal product hierarchy.
+  </Card>
+</CardGroup>

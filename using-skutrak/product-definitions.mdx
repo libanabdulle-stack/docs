@@ -1,0 +1,112 @@
+---
+title: "How to manage your product definitions"
+sidebarTitle: "Product Definitions"
+description: "Create and upload your internal product hierarchy into SKUtrak so retailer data maps to your SKUs, categories, and brands."
+icon: "pencil"
+---
+
+<Tip>
+Product definitions are your internal product master list — the SKUs, descriptions, categories, and brands that SKUtrak maps everything to. Get these right and every retailer's data lines up automatically. Get them wrong and your dashboards group products in ways that don't match your business.
+</Tip>
+
+## Who is this for?
+
+<Tabs>
+  <Tab title="Account Managers">
+    You don't usually manage product definitions directly, but you need to know they exist. If a product shows up under the wrong category in your dashboards, this is the place to fix it. Flag it with your data manager or follow the steps below.
+  </Tab>
+  <Tab title="Supply Chain">
+    Product definitions control how items appear in availability and inbound dashboards. If a new SKU isn't showing up anywhere, it probably hasn't been added as a product definition yet.
+  </Tab>
+  <Tab title="Data Managers">
+    This is your domain. Product definitions are the foundation everything else maps to. Keep them clean, consistent, and up to date — especially when your business launches new products or restructures categories.
+  </Tab>
+</Tabs>
+
+## What is a product definition?
+
+A product definition is a single record in your internal product master. Each one has a unique code and a set of attributes that describe the product from your perspective — not the retailer's.
+
+At minimum, every definition needs:
+
+| Field | What it is | Example |
+|-------|-----------|---------|
+| **Unique Code** | Your internal product identifier | `HUM-200G-CL` |
+| **Description** | Short, meaningful product name | `Classic Hummus 200g` |
+| **Category** | Top-level classification | `Dips` |
+| **Subcategory** | Second-level classification | `Hummus` |
+| **Brand** | Brand name | `BrandCo` |
+
+SKUtrak also supports optional attributes: GTIN (barcode), base unit, net quantity, individual units, and any custom fields you add.
+
+## How do I upload product definitions?
+
+<Steps>
+  <Step title="Prepare your CSV file">
+    Create a spreadsheet with one column per attribute: Unique Code, Description, Category, Subcategory, Brand, and any custom fields. Each product should appear only once — duplicate unique codes will cause upload errors. Save as CSV.
+  </Step>
+  <Step title="Add any custom attributes first">
+    If your CSV includes fields beyond the defaults (e.g. pack size, flavour, weight), create them in SKUtrak before uploading. Go to **Product Catalogue > My Products > Manage Attributes** and click **+ Add Attribute**. Choose a data type: Text, Date, Number, or List.
+  </Step>
+  <Step title="Upload the file">
+    Go to **Product Catalogue > My Products**, click **Upload Products**, select your CSV, and click **Confirm**. Map each column header to the corresponding SKUtrak attribute. Use the X icon to skip any optional columns you don't need. Click **Upload**.
+  </Step>
+  <Step title="Verify the upload">
+    Your product definitions should now appear on the Products page. Spot-check a few to make sure categories and descriptions mapped correctly.
+  </Step>
+</Steps>
+
+<Warning>
+If your CSV has duplicate unique codes, the upload will fail for those rows. Deduplicate your file before uploading — sort by unique code and check for repeats.
+</Warning>
+
+## How do I create a single product definition?
+
+For one-off additions (a new product launch, a retailer exclusive), you don't need a CSV.
+
+<Steps>
+  <Step title="Navigate to My Products">
+    Go to **Product Catalogue > My Products**.
+  </Step>
+  <Step title="Create the product">
+    Click **+ Create Product**. Fill in all required attributes (marked with a star). Add optional attributes if relevant.
+  </Step>
+  <Step title="Save">
+    Click **Save**. The product is immediately available for mapping.
+  </Step>
+</Steps>
+
+## How do I manage custom attributes?
+
+Custom attributes let you track business-specific fields that go beyond the defaults. They aren't visible on SKUtrak dashboards but are available via SKUtrak Share.
+
+<Steps>
+  <Step title="Open attribute management">
+    Go to **Product Catalogue > My Products** and select **Manage Attributes** in the top-right corner.
+  </Step>
+  <Step title="Add an attribute">
+    Click **+ Add Attribute**. Enter a name, optional description, and choose a data type:
+    - **Text** — free text (e.g. flavour, pack format)
+    - **Date** — date values (e.g. launch date)
+    - **Number** — numerical values (e.g. case size, weight)
+    - **List** — pre-defined options (e.g. range tier: Core, Premium, Value)
+  </Step>
+  <Step title="Set whether it's required">
+    Toggle the required flag if every product must have a value for this attribute. Click **Save**.
+  </Step>
+</Steps>
+
+<Note>
+**Naming tip** — Keep attribute names short and descriptive. "Pack Size" is better than "Product Pack Size Information". Consistent naming makes exports cleaner and helps the AI match products more accurately.
+</Note>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Map retailer codes" icon="link" href="/using-skutrak/map-retailer-codes">
+    Now that your definitions exist, link them to retailer product codes.
+  </Card>
+  <Card title="Add pricing and terms" icon="sterling-sign" href="/using-skutrak/pricing-and-terms">
+    Attach list prices and costs for promotional ROI calculations.
+  </Card>
+</CardGroup>

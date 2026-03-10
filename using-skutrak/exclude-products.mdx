@@ -1,0 +1,87 @@
+---
+title: "How to exclude products from your dashboards"
+sidebarTitle: "Exclude Products"
+description: "Remove delisted, acquired, or incorrectly assigned products from your SKUtrak dashboards without losing data."
+icon: "ban"
+---
+
+<Tip>
+Some products shouldn't appear in your dashboards — delisted lines with residual stock, brands you've sold, or products incorrectly assigned to you by the retailer. Exclusions hide them from dashboards and SKUtrak Share without deleting any data. You can set them permanently or for a specific time period.
+</Tip>
+
+## Who is this for?
+
+<Tabs>
+  <Tab title="Account Managers">
+    If a delisted product is dragging down your availability figures or adding noise to your buyer meeting, get it excluded. It takes 30 seconds and your dashboards look cleaner by tomorrow.
+  </Tab>
+  <Tab title="Supply Chain">
+    Residual stock for delisted products can distort depot and availability metrics. Excluding them gives you a clearer picture of your active range. Use time-bound exclusions if the product will eventually clear through.
+  </Tab>
+  <Tab title="Data Managers">
+    Exclusions are your housekeeping tool. Review them quarterly — products that were temporarily excluded may need to be permanently excluded or reinstated as circumstances change.
+  </Tab>
+</Tabs>
+
+## When should I exclude a product?
+
+<CardGroup cols={3}>
+  <Card title="Brand sold or acquired" icon="handshake">
+    Your organisation has parted ways with a brand or subset of its portfolio. Retailer data feeds take time to reflect this — exclude the products until the feed catches up.
+  </Card>
+  <Card title="Product delisted" icon="box-archive">
+    Delisted products can show residual stock or sporadic sales for weeks. These add noise to availability figures and distort active range performance.
+  </Card>
+  <Card title="Incorrectly assigned" icon="triangle-exclamation">
+    Retailers sometimes assign products to the wrong supplier in their systems. If you see products that aren't yours, exclude them to keep your dashboards accurate.
+  </Card>
+</CardGroup>
+
+## How do I exclude a product?
+
+<Steps>
+  <Step title="Navigate to Exclusions">
+    Go to **Product Catalogue > Retailer Mappings** and select the **Exclusions** tab in the table.
+  </Step>
+  <Step title="Add an exclusion">
+    Click **+ Add Exclusion** in the top-right. Select the retailer product from the list, or use the search bar to find it.
+  </Step>
+  <Step title="Set a time frame (optional)">
+    Click **+ Add** under "Add time frames" if you want the exclusion to apply only for a specific period. Leave it blank for a permanent exclusion.
+  </Step>
+  <Step title="Save">
+    Click **Save**. The product will be excluded when SKUtrak updates the next day.
+  </Step>
+</Steps>
+
+<Note>
+Exclusions take effect on the next daily data update, not immediately. If you exclude a product on Monday afternoon, your dashboards will reflect the change on Tuesday morning.
+</Note>
+
+## How do I remove an exclusion?
+
+If circumstances change — a product gets relisted, or you realise it was excluded in error — you can reverse it.
+
+In the Exclusions table, find the product and select:
+
+- **Delete** — removes the exclusion completely; the product reappears in dashboards on the next update
+- **Edit** — adjust the time frames if you want to change when the exclusion applies
+
+<Warning>
+Removing an exclusion brings the product back into all dashboards. If it was excluded because the data was noisy (sporadic sales, residual stock), check whether the underlying data has settled before reinstating.
+</Warning>
+
+## How do exclusions affect SKUtrak Share?
+
+Excluded products are filtered out by default in SKUtrak Share exports. You can include them if needed by adjusting the export filters — the data isn't deleted, just hidden.
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Map retailer codes" icon="link" href="/using-skutrak/map-retailer-codes">
+    Link retailer product codes to your internal definitions.
+  </Card>
+  <Card title="Manage product definitions" icon="pencil" href="/using-skutrak/product-definitions">
+    Add or edit your internal product hierarchy.
+  </Card>
+</CardGroup>
