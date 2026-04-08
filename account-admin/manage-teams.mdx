@@ -1,0 +1,85 @@
+---
+title: Manage teams
+sidebarTitle: Manage teams
+description: "Use teams to control which retailers each user can see in SkuTrak."
+---
+
+Teams control **which retailer data each user can see**. A user only sees data for the retailers assigned to their team. If someone is on multiple teams, their access adds up across all of them.
+
+## Why teams matter
+
+Without teams, every user sees every retailer. That's fine for a small company with two or three connections. But once you have multiple retailers and a growing team, you need control over who sees what.
+
+**Common example:** Your Tesco account manager doesn't need to see Sainsbury's data, and your supply chain analyst covering Asda shouldn't be distracted by Co-op numbers. Teams solve this cleanly.
+
+## Watch: setting up teams
+
+<iframe
+  src="https://www.loom.com/embed/68d3c6e5f6f6435f9df9a6afec1dbdcc"
+  width="100%"
+  height="450"
+  frameBorder="0"
+  allowFullScreen
+></iframe>
+
+## Three ways to set up teams
+
+<Tabs>
+  <Tab title="One team, full access">
+    **Best for:** Small organisations where everyone needs all the data.
+
+    Create a single team with the **Full Access** toggle on. Add all users. Everyone sees everything. Simple.
+  </Tab>
+  <Tab title="One team per retailer">
+    **Best for:** Organisations with dedicated account teams per retailer.
+
+    Create a team for each retailer (e.g. "Tesco Team", "Sainsbury's Team"). Assign only the relevant retailer to each. Add users to the teams they need. People covering multiple retailers get added to multiple teams.
+  </Tab>
+  <Tab title="Custom teams by function">
+    **Best for:** Larger organisations with mixed responsibilities.
+
+    Create teams by business function (e.g. "UK Supply Chain", "Commercial UK Grocery", "Senior Leadership"). Assign the relevant retailers to each. This gives you flexibility without creating a team for every retailer.
+  </Tab>
+</Tabs>
+
+## How to manage teams
+
+<AccordionGroup>
+  <Accordion title="Create a team" icon="plus">
+    Go to **Settings > Teams > Add Team**. Name the team, toggle **Full Access** on or select specific retailers, then save. Only Owners and Admins can create teams.
+  </Accordion>
+  <Accordion title="Add members to a team" icon="user-plus">
+    Open the team, click **Add Members**, and select the users you want to include. They'll immediately gain access to that team's retailers.
+  </Accordion>
+  <Accordion title="Remove someone from a team" icon="user-minus">
+    Open the team, select the checkbox next to the user's name, and click **Remove From Team**. Their access to that team's retailers is revoked immediately. Owners, Admins, and Managers can all do this.
+  </Accordion>
+</AccordionGroup>
+
+## How access works
+
+| Scenario | What happens |
+|----------|-------------|
+| User is on Team A (Tesco) and Team B (Sainsbury's) | They see both Tesco and Sainsbury's data |
+| User is removed from Team A | They immediately lose access to Tesco data. Sainsbury's access is unaffected |
+| User is on no teams | They can log in but won't see any retailer data |
+| Team has Full Access toggled on | Members see all retailers, including any added in future |
+
+<Warning>
+  When you remove someone from a team, their access changes immediately. There's no grace period. Make sure you're not cutting off someone mid-analysis.
+</Warning>
+
+<Tip>
+  If a user reports they can't see a retailer's data, check their team assignments first. Nine times out of ten, they're not on the right team.
+</Tip>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Roles and permissions" icon="shield" href="/account-admin/roles-and-permissions">
+    Understand what each role can and can't do
+  </Card>
+  <Card title="Account preferences" icon="gear" href="/account-admin/account-preferences">
+    Configure notifications and manage your profile
+  </Card>
+</CardGroup>

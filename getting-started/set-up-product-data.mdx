@@ -1,0 +1,76 @@
+---
+title: Set up your product data
+sidebarTitle: Set up your product data
+description: "Why product mappings matter, what happens without them, and how to get your Product Catalogue set up properly."
+---
+
+Product mappings connect **retailer product codes to your internal SKUs**. Without them, SkuTrak can't tell which of your products a retailer is reporting on, and your dashboards won't make sense across retailers.
+
+## Why it matters
+
+Every retailer uses different identifiers for the same product. Barcodes should solve this, but in practice they're inconsistent and full of gaps. If your mappings aren't right, you get fragmented reporting, broken cross-retailer analysis, and data you can't trust.
+
+**The old way:** Most teams manage this in spreadsheets. That means manual maintenance, version control errors, limited visibility for the team, and no audit trail. When a mapping breaks, reports break silently and nobody notices until the wrong number shows up in a buyer meeting.
+
+**The SkuTrak way:** The Product Catalogue replaces all of that.
+
+## What the Product Catalogue gives you
+
+<CardGroup cols={2}>
+  <Card title="AI-powered matching" icon="wand-magic-sparkles">
+    SkuTrak suggests matches for new retailer products automatically. You review and approve rather than hunting through spreadsheets.
+  </Card>
+  <Card title="Completion tracking" icon="chart-pie">
+    See your mapping completion rate at a glance with alerts when new unmatched products appear.
+  </Card>
+  <Card title="Full audit trail" icon="clock-rotate-left">
+    Every change is logged with who made it and when. No more "who changed this mapping?" conversations.
+  </Card>
+  <Card title="Pricing and terms" icon="sterling-sign">
+    Integrates with SkuTrak Promote so you can track profitability alongside performance. Add pricing, discounts, and costs at product level.
+  </Card>
+</CardGroup>
+
+## How to get started
+
+<Steps>
+  <Step title="Check your pending matches">
+    Open the Product Catalogue and look at the **Pending** tab. These are retailer products SkuTrak has spotted but can't confidently match to your internal SKUs yet.
+  </Step>
+  <Step title="Review AI suggestions">
+    For each pending product, SkuTrak shows its best match suggestion. If it's correct, approve it. If not, search for the right internal product manually.
+  </Step>
+  <Step title="Upload your master product list">
+    If you haven't already, upload your internal product list so SkuTrak has something to match against. This is your source of truth for product names, categories, and internal codes.
+  </Step>
+  <Step title="Set up your product hierarchy">
+    Define your categories, subcategories, and brands. This is what powers the grouping filters across all your dashboards.
+  </Step>
+</Steps>
+
+<Warning>
+  Don't skip this step. Unmapped products won't appear in your dashboards, which means you're making decisions on incomplete data. If your mapping completion rate is below 95%, your dashboard numbers aren't telling the full story.
+</Warning>
+
+## Keeping it healthy
+
+| Task | How often | Why |
+|------|-----------|-----|
+| Review pending matches | Weekly | New retailer products appear as retailers update their systems |
+| Check completion rate | Monthly | Catch any drift before it affects reporting |
+| Update product hierarchy | As needed | Keep your category structure aligned with how your business actually reports |
+
+<Tip>
+  Set up the **Product Mapping Summary** email notification in your account preferences. It sends you a regular digest of new matches needed, so you don't have to remember to check manually.
+</Tip>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Dashboards overview" icon="chart-mixed" href="/getting-started/dashboards-overview">
+    Now your data is mapped, see which dashboards to use
+  </Card>
+  <Card title="Product Catalogue guides" icon="book" href="/using-skutrak/product-mappings">
+    Detailed guides on managing mappings, definitions, and retailer codes
+  </Card>
+</CardGroup>

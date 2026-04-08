@@ -1,0 +1,82 @@
+---
+title: About data sources
+sidebarTitle: About data sources
+description: "How SkuTrak connects to your retailers, what the status indicators mean, and how to keep your connections healthy."
+---
+
+A data source is a **connection between SkuTrak and a retailer portal**. When you create one, you give SkuTrak the credentials it needs to log in and collect data on your behalf, automatically, every day.
+
+## Watch: setting up a data source
+
+<iframe
+  src="https://www.loom.com/embed/68d3c6e5f6f6435f9df9a6afec1dbdcc"
+  width="100%"
+  height="450"
+  frameBorder="0"
+  allowFullScreen
+></iframe>
+
+## Why it matters
+
+Without a healthy data source, SkuTrak has nothing to show you. Every dashboard, every alert, every insight depends on data flowing in from your retailers. A broken connection means gaps in your data, and some retailers only make metrics available for short windows, so you can't backfill what you miss.
+
+## Where to find them
+
+Open the **Data Management** screen using the icon in the top-right corner of SkuTrak. Each retailer you've connected appears as a tile with a status indicator.
+
+## Status indicators
+
+| Status | What it means | What to do |
+|--------|--------------|------------|
+| **Green tick** | Connection is active and collecting data | Nothing. This is healthy |
+| **Red warning** | Connection is failing | Check your credentials. The retailer may have reset your password |
+| **Link icon** | No connection set up yet | Click the tile to create a new connection |
+
+## Keeping connections healthy
+
+<AccordionGroup>
+  <Accordion title="Update credentials when they change" icon="key">
+    If you change your password on a retailer portal, you need to update it in SkuTrak too. Some retailers limit how far back you can pull data, so a lapsed connection means **permanent gaps** in your reporting.
+  </Accordion>
+  <Accordion title="Watch for password reset reminders" icon="bell">
+    Many retailer portals require periodic password resets. SkuTrak sends you a reminder **seven days before** a required reset so you can update both systems at the same time.
+  </Accordion>
+  <Accordion title="Act on failure notifications quickly" icon="triangle-exclamation">
+    When a connection fails, SkuTrak notifies the account Owner and Data Source Owner on **day one**. By day three, everyone in the organisation with access to that retailer gets notified. Don't wait for the wider team to find out.
+  </Accordion>
+</AccordionGroup>
+
+## Who can manage data sources
+
+Only users with a **Manager role or higher** can create, edit, or delete data sources. If you need a connection set up and don't have the right permissions, ask your account admin or contact support at skutrak-support@gocrisp.com.
+
+## Deleting a data source
+
+If you need to remove a connection:
+
+<Steps>
+  <Step title="Go to Data Sources">
+    Open Data Management from the top-right icon.
+  </Step>
+  <Step title="Select the retailer">
+    Click on the retailer tile you want to remove.
+  </Step>
+  <Step title="Delete">
+    Click the bin icon in settings and confirm. This stops all data collection from that retailer.
+  </Step>
+</Steps>
+
+<Warning>
+  Deleting a data source stops data collection permanently. Historical data you've already collected stays in SkuTrak, but no new data will come in. Make sure this is what you want before confirming.
+</Warning>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Dashboards overview" icon="chart-mixed" href="/getting-started/dashboards-overview">
+    See what dashboards are available once your data is flowing
+  </Card>
+  <Card title="Set up your product data" icon="barcode" href="/getting-started/set-up-product-data">
+    Map your products so SkuTrak can match retailer codes to your SKUs
+  </Card>
+</CardGroup>

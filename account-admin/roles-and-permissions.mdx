@@ -1,0 +1,89 @@
+---
+title: Roles and permissions
+sidebarTitle: Roles and permissions
+description: "The four user roles in SkuTrak, what each one can do, and how to manage your team."
+---
+
+SkuTrak uses **four roles** to control what each user can do. Every user gets one role, and you can add as many users as you need at no extra cost.
+
+## Watch: managing your team
+
+<iframe
+  src="https://www.loom.com/embed/68d3c6e5f6f6435f9df9a6afec1dbdcc"
+  width="100%"
+  height="450"
+  frameBorder="0"
+  allowFullScreen
+></iframe>
+
+## The four roles
+
+<Tabs>
+  <Tab title="Owner">
+    The main account holder. Full permissions across everything, including editing and deleting the organisation itself. There's only one Owner per account.
+  </Tab>
+  <Tab title="Admin">
+    Can do almost everything the Owner can: manage teams, change roles, remove users, and handle data sources. Can't edit or delete the organisation.
+  </Tab>
+  <Tab title="Manager">
+    Focused on day-to-day operations. Can invite new users, manage product data, and work with data sources. Can't remove users or change roles.
+  </Tab>
+  <Tab title="Member">
+    The standard user. Can view all dashboards, export data, and share insights. Can invite other users but can't manage teams or product data.
+  </Tab>
+</Tabs>
+
+## Permissions at a glance
+
+| Action | Member | Manager | Admin | Owner |
+|--------|--------|---------|-------|-------|
+| View dashboards and export data | Yes | Yes | Yes | Yes |
+| Add users | Yes | Yes | Yes | Yes |
+| Manage product data | No | Yes | Yes | Yes |
+| Remove users | No | No | Yes | Yes |
+| Change user roles | No | No | Yes | Yes |
+| Create and manage teams | No | No | Yes | Yes |
+| Edit organisation settings | No | No | No | Yes |
+
+## Common tasks
+
+<AccordionGroup>
+  <Accordion title="Invite a new user" icon="user-plus">
+    Go to **Settings > Users > Invite User**. Enter their email, choose a role, and assign them to one or more teams. Click **Send**. They'll receive an email with a link to create their password.
+  </Accordion>
+  <Accordion title="Remove a user" icon="user-minus">
+    Go to **Settings > Users**. Select the checkbox next to the user's name and click **Delete**. Confirm when prompted. You need Admin or Owner access to do this.
+  </Accordion>
+  <Accordion title="Change someone's role" icon="user-pen">
+    Go to **Settings > Users**. Click the role dropdown next to the user's name and select the new role. The change takes effect immediately.
+  </Accordion>
+  <Accordion title="Transfer ownership" icon="arrow-right-arrow-left">
+    Go to **Settings > Organisations**. Click **Change** next to the current Owner, select the new Owner, and click **Save**. Only the current Owner can do this.
+  </Accordion>
+</AccordionGroup>
+
+## What new users see
+
+When someone accepts their invite, they:
+
+1. Click the link in their email
+2. Create a password
+3. Verify their email address
+4. Land on the SkuTrak home page with a guided tour
+
+They'll only see data for the retailers assigned to their team. If they can't see a retailer they expect, check their team assignment.
+
+<Tip>
+  Give new Account Managers the **Member** role unless they need to manage product data. It keeps things simple and you can always upgrade their role later.
+</Tip>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Manage teams" icon="users" href="/account-admin/manage-teams">
+    Control which retailers each user can see using teams
+  </Card>
+  <Card title="Account preferences" icon="gear" href="/account-admin/account-preferences">
+    Set up notifications, manage your profile, and configure your account
+  </Card>
+</CardGroup>
