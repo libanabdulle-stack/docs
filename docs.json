@@ -54,6 +54,12 @@
               "using-skutrak/exclude-products",
               "using-skutrak/pricing-and-terms"
             ]
+          },
+          {
+            "group": "Performance Dashboards",
+            "pages": [
+              "dashboards/top-line-report"
+            ]
           }
         ]
       },
