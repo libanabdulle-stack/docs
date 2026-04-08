@@ -58,7 +58,11 @@
           {
             "group": "Performance Dashboards",
             "pages": [
-              "dashboards/top-line-report"
+              "dashboards/top-line-report",
+              "dashboards/sales-report",
+              "dashboards/availability-report",
+              "dashboards/depot-stock",
+              "dashboards/commercial-alerts"
             ]
           }
         ]

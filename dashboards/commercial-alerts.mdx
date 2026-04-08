@@ -1,0 +1,129 @@
+---
+title: Commercial Alerts
+sidebarTitle: Commercial Alerts
+description: "Automated alerts that flag significant changes in your account so you can act on problems before they escalate."
+---
+
+Commercial Alerts **monitor your account and flag when something important changes**. Instead of manually checking every metric each week, alerts surface the issues that need your attention, things like sudden sales drops, availability declines, or distribution losses.
+
+<Frame caption="The Commercial Alerts dashboard showing active alerts with severity and affected products">
+  <img src="/images/top-line-report-dashboard.png" alt="Commercial Alerts dashboard" />
+</Frame>
+
+## Watch: managing your alerts
+
+<iframe
+  src="https://www.loom.com/embed/68d3c6e5f6f6435f9df9a6afec1dbdcc"
+  width="100%"
+  height="450"
+  frameBorder="0"
+  allowFullScreen
+></iframe>
+
+## Why it matters
+
+<Tabs>
+  <Tab title="Account Managers">
+    You can't watch every SKU every week. Alerts act as your **safety net**. They catch the things you'd miss in a busy week, a SKU quietly losing distribution, availability sliding on a key product, or a sudden sales drop that needs investigating before your buyer notices it first.
+  </Tab>
+  <Tab title="Supply Chain Analysts">
+    Alerts give you **time to react**. A depot stock alert firing on Monday gives you days to chase a delivery or escalate before the gap hits store shelves. Without alerts, you're finding problems after they've already cost you sales.
+  </Tab>
+</Tabs>
+
+## When to use it
+
+| Trigger | What you're checking |
+|---------|---------------------|
+| **Start of the week** (Monday morning) | What fired over the weekend? Any new issues to deal with? |
+| **Before reviewing dashboards** | Let alerts guide where you spend your time. Start with the fires |
+| **After resolving an issue** | Has the alert cleared, or is the problem still active? |
+| **Quarterly review** | Which alerts fire most often? These are your systemic issues |
+
+## What to look for
+
+<AccordionGroup>
+  <Accordion title="Recurring alerts on the same SKU" icon="rotate">
+    If the same product keeps triggering alerts week after week, you don't have an isolated incident. You have a **systemic problem** that needs a structural fix, whether that's a supply chain review, a ranging conversation, or a promotional rethink.
+  </Accordion>
+  <Accordion title="Multiple alert types firing at once" icon="bells">
+    When sales, availability, and supply alerts all fire simultaneously for the same product, the **root cause is almost always supply**. Follow the chain: depot stock dropped, then availability dropped, then sales dropped. Fix the supply issue and the rest recovers.
+  </Accordion>
+  <Accordion title="Alert fired but metrics look fine now" icon="circle-check">
+    This usually means the issue was **short-lived**, perhaps a single week blip in supply or a data lag. Check the trend over the last 3-4 weeks. If everything else looks stable, acknowledge it and move on. Not every alert requires action.
+  </Accordion>
+</AccordionGroup>
+
+## How to read it
+
+<Steps>
+  <Step title="Review active alerts by severity">
+    Start with the highest severity alerts. These represent the biggest commercial risk to your account.
+  </Step>
+  <Step title="Group by alert type">
+    Are you seeing mostly sales alerts, availability alerts, or supply alerts? The pattern tells you where the underlying problem sits.
+  </Step>
+  <Step title="Check the affected products">
+    Are alerts concentrated on a few key SKUs or spread across the range? Concentrated alerts mean a targeted fix. Spread alerts mean a broader issue.
+  </Step>
+  <Step title="Drill into the relevant dashboard">
+    Use the alert as your starting point, then jump to the specific dashboard for detail. Sales alert? Go to the Sales Report. Availability alert? Go to the Availability Report.
+  </Step>
+</Steps>
+
+## Dashboard controls
+
+<CardGroup cols={2}>
+  <Card title="Alert Type Filter" icon="filter">
+    Filter by alert category: Sales, Availability, Supply Chain, or Distribution. Focus on one area at a time.
+  </Card>
+  <Card title="Severity Level" icon="gauge">
+    Filter by severity to focus on critical issues first. Low severity alerts can wait. High severity alerts shouldn't.
+  </Card>
+  <Card title="Time Range" icon="calendar">
+    See alerts from the current week, last 4 weeks, or a custom range. Useful for spotting patterns over time.
+  </Card>
+  <Card title="Product Filter" icon="layer-group">
+    Filter to specific products, brands, or categories. Useful when you're investigating a known issue.
+  </Card>
+</CardGroup>
+
+## What's on screen
+
+<CardGroup cols={3}>
+  <Card title="Alert Feed" icon="list">
+    A chronological list of all active and recent alerts with severity colour coding. Red is critical, amber is warning, green is resolved.
+  </Card>
+  <Card title="Alert Summary" icon="chart-pie">
+    Breakdown of alerts by type and severity. Gives you the overall picture at a glance: are things generally healthy or are there multiple fires?
+  </Card>
+  <Card title="Affected Products" icon="boxes-stacked">
+    Lists the specific products each alert applies to, with a direct link to drill into the relevant dashboard for that SKU.
+  </Card>
+</CardGroup>
+
+## Quick reference
+
+| Alert Type | What triggers it | What to do |
+|-----------|-----------------|------------|
+| **Sales Drop** | Sales value or volume falls significantly vs comparison period | Check Sales Report for which SKUs are driving the drop. Is it demand or availability? |
+| **Availability Decline** | Availability % drops below threshold or falls sharply | Go to Availability Report. Check if the issue is supply or store replenishment |
+| **Distribution Loss** | Stores ranged decreases for a product | Confirm with buyer whether this is a deliberate delist or an error. Act quickly if unintended |
+| **Supply Alert** | DC inbound falls below threshold or depot stock reaches critical level | Check Depot Stock report. Chase delivery status with your supply chain team |
+| **Rate of Sale Change** | Significant shift in rate of sale, up or down | Investigate in Sales Report. Rising ROS with flat sales could mean distribution loss |
+| **Waste Spike** | Waste value or percentage increases sharply | Check if this is a shelf-life issue, over-supply, or a store execution problem |
+
+<Tip>
+  **Pro tip:** Don't try to action every alert. Prioritise by commercial impact. A high-severity alert on your number one SKU is worth more attention than a low-severity alert on a tail product. Use alerts to decide where to spend your time, not to create a to-do list of everything.
+</Tip>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Top Line Report" icon="chart-line" href="/dashboards/top-line-report">
+    Get the overall account view to put alerts in context
+  </Card>
+  <Card title="Sales Report" icon="sterling-sign" href="/dashboards/sales-report">
+    Drill into the detail behind any sales-related alerts
+  </Card>
+</CardGroup>

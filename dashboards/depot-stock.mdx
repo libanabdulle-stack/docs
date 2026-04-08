@@ -1,0 +1,129 @@
+---
+title: Depot Stock
+sidebarTitle: Depot Stock
+description: "Monitor stock levels at the retailer's distribution centres so you can spot supply problems before they hit the shelf."
+---
+
+The Depot Stock report shows you **what's sitting in the retailer's distribution centres**. It tracks stock units, weeks of cover, and inbound trends so you can see whether supply is healthy or heading for a gap before it affects store availability.
+
+<Frame caption="The Depot Stock report showing DC stock levels and weeks of cover by product">
+  <img src="/images/top-line-report-dashboard.png" alt="Depot Stock dashboard" />
+</Frame>
+
+## Watch: reading the Depot Stock report
+
+<iframe
+  src="https://www.loom.com/embed/68d3c6e5f6f6435f9df9a6afec1dbdcc"
+  width="100%"
+  height="450"
+  frameBorder="0"
+  allowFullScreen
+></iframe>
+
+## Why it matters
+
+<Tabs>
+  <Tab title="Supply Chain Analysts">
+    This is your **forward-looking indicator**. Store availability is a lagging metric, it tells you what already went wrong. Depot stock tells you what's **about to go wrong**. If stock is running low at DC level, you have a 1-2 week window before stores start going empty.
+  </Tab>
+  <Tab title="Account Managers">
+    You don't need to manage supply chain day-to-day, but you need to **know when there's a problem coming**. If depot stock is low on your top SKUs before a key trading period, that's a conversation to have with your supply chain team now, not after the lost sales show up.
+  </Tab>
+</Tabs>
+
+## When to use it
+
+| Trigger | What you're checking |
+|---------|---------------------|
+| **Weekly supply review** | Are stock levels healthy across your range? |
+| **DC inbound dropped on Top Line Report** | How much stock is left in the depot? How many weeks of cover? |
+| **Ahead of a promotional period** | Is there enough stock in the pipeline to support the uplift? |
+| **After a supply disruption** | Have stock levels recovered, or are depots still depleted? |
+
+## What to look for
+
+<AccordionGroup>
+  <Accordion title="Weeks of cover dropping below 2" icon="clock">
+    This is the danger zone. Most retailers need **2-3 weeks of depot cover** to maintain store availability. Below 2 weeks, stores will start running out. Below 1 week, gaps are almost guaranteed.
+  </Accordion>
+  <Accordion title="Stock levels falling while sales are stable" icon="arrow-trend-down">
+    If sales haven't changed but depot stock is declining, **inbound supply isn't keeping pace with demand**. Check whether deliveries have been missed, reduced, or delayed. This is an upstream problem.
+  </Accordion>
+  <Accordion title="Stock building up with no increase in sales" icon="boxes-stacked">
+    Rising depot stock without rising sales suggests **over-supply or a demand slowdown**. Watch for waste risk, especially on short shelf-life products. This could also signal a future markdown.
+  </Accordion>
+</AccordionGroup>
+
+## How to read it
+
+<Steps>
+  <Step title="Check weeks of cover across your range">
+    This is the most important number. Sort by weeks of cover ascending to find the SKUs closest to running out.
+  </Step>
+  <Step title="Compare against inbound trends">
+    Is stock being replenished? If weeks of cover is low but inbound is increasing, the situation is recovering. If inbound is also declining, the problem is getting worse.
+  </Step>
+  <Step title="Flag anything below 2 weeks cover">
+    These products need immediate attention. Cross-reference with your delivery schedule to understand when the next inbound is expected.
+  </Step>
+  <Step title="Check high-value SKUs separately">
+    Your top 10 SKUs by sales value deserve individual attention. A stock gap on a top seller costs disproportionately more than on a tail SKU.
+  </Step>
+</Steps>
+
+## Dashboard controls
+
+<CardGroup cols={2}>
+  <Card title="Product Grouping" icon="layer-group">
+    View by Category, Subcategory, Brand, or SKU. Start broad to find problem areas, then drill to SKU level.
+  </Card>
+  <Card title="Depot Selection" icon="warehouse">
+    Filter to specific distribution centres if the retailer has multiple. Useful for regional supply issues.
+  </Card>
+  <Card title="Time Period" icon="calendar">
+    Set the analysis window. Weekly is most useful for stock monitoring. Longer periods show stock trends.
+  </Card>
+  <Card title="Stock Threshold" icon="filter">
+    Filter to only show products below a certain weeks-of-cover level. Cuts straight to the problem areas.
+  </Card>
+</CardGroup>
+
+## What's on screen
+
+<CardGroup cols={3}>
+  <Card title="Stock Table" icon="table">
+    Every product with current depot stock units, weeks of cover, and inbound percentage. Sortable by any column to find the gaps fast.
+  </Card>
+  <Card title="Stock Trend" icon="chart-line">
+    Stock level over time for the selected product. Look for the direction: **rising means recovering**, **falling means deteriorating**.
+  </Card>
+  <Card title="Inbound vs Outbound" icon="arrows-left-right">
+    Compares what's coming into the depot against what's leaving for stores. When outbound consistently exceeds inbound, stock erodes.
+  </Card>
+</CardGroup>
+
+## Quick reference
+
+| Metric | Category | What it tells you |
+|--------|----------|-------------------|
+| **Depot Stock Units** | Supply Chain | Total units held at the retailer's distribution centres |
+| **Weeks of Cover** | Critical | How many weeks current stock would last at the current rate of sale. Below 2 is a red flag |
+| **DC Inbound %** | Supply Chain | Percentage of ordered cases actually delivered to the DC |
+| **Store Outbound** | Supply Chain | Volume leaving the DC for stores. Rising outbound with flat inbound depletes stock |
+| **Stock Build** | Supply Chain | Whether stock is accumulating or depleting over time |
+| **Days Since Last Delivery** | Supply Chain | How recently the DC received your product. Useful for spotting delivery gaps |
+
+<Tip>
+  **Pro tip:** Set a personal threshold of 2.5 weeks of cover as your early warning line. By the time stock hits 2 weeks, you're already in reactive mode. At 2.5 weeks you still have time to chase a delivery or escalate with your supply team.
+</Tip>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Availability Report" icon="shelves" href="/dashboards/availability-report">
+    Check whether low depot stock has started affecting store shelves
+  </Card>
+  <Card title="Top Line Report" icon="chart-line" href="/dashboards/top-line-report">
+    See the sales impact of any supply gaps
+  </Card>
+</CardGroup>

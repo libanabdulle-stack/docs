@@ -1,0 +1,129 @@
+---
+title: Availability Report
+sidebarTitle: Availability Report
+description: "Track where your products are on shelf and where they're missing, so you can close gaps before they cost you sales."
+---
+
+The Availability Report shows you **where your products are actually on shelf**. It tracks availability percentage across stores, flags gaps, and helps you understand whether missing stock is a ranging issue, a supply issue, or a store execution issue.
+
+<Frame caption="The Availability Report showing store-level availability with gap analysis">
+  <img src="/images/top-line-report-dashboard.png" alt="Availability Report dashboard" />
+</Frame>
+
+## Watch: using the Availability Report
+
+<iframe
+  src="https://www.loom.com/embed/68d3c6e5f6f6435f9df9a6afec1dbdcc"
+  width="100%"
+  height="450"
+  frameBorder="0"
+  allowFullScreen
+></iframe>
+
+## Why it matters
+
+<Tabs>
+  <Tab title="Account Managers">
+    Availability is the **silent killer of sales**. You can have the best product, the best promotion, and the best shelf position, but if the product isn't on shelf when the shopper reaches for it, none of that matters. This report tells you exactly where those gaps are.
+  </Tab>
+  <Tab title="Supply Chain Analysts">
+    This is where supply chain problems become **visible at store level**. A dip in DC inbound shows up here 1-2 weeks later as availability gaps. Use this to confirm whether upstream supply issues have hit the shelf yet, and which stores are affected.
+  </Tab>
+</Tabs>
+
+## When to use it
+
+| Trigger | What you're checking |
+|---------|---------------------|
+| **Top Line Report shows sales decline** | Is the decline caused by product being off shelf? |
+| **After a new line launch** | Are stores actually stocking the new product? |
+| **DC inbound dropped last week** | Has the supply gap reached store shelves yet? |
+| **Before a buyer meeting** | Availability figures to support supply chain discussions |
+
+## What to look for
+
+<AccordionGroup>
+  <Accordion title="Availability dropping while stores ranged stays stable" icon="triangle-exclamation">
+    The retailer still lists your product but stores aren't keeping it on shelf. This is a **replenishment or store execution issue**. The product should be there but isn't. Raise this with the buyer as a service level concern.
+  </Accordion>
+  <Accordion title="Availability low on specific SKUs only" icon="box-open">
+    If most of your range is well-stocked but one or two SKUs are struggling, the issue is likely **SKU-specific**. Check if those items have supply constraints, are slow movers being deprioritised by stores, or have packaging issues causing shelf gaps.
+  </Accordion>
+  <Accordion title="Regional availability patterns" icon="map">
+    If availability is strong nationally but weak in specific regions, the problem sits with **depot allocation or regional distribution**. This is useful evidence when discussing supply chain performance with the buyer.
+  </Accordion>
+</AccordionGroup>
+
+## How to read it
+
+<Steps>
+  <Step title="Check the headline availability percentage">
+    This is your overall score. Anything below **95%** deserves investigation. Below **90%** is urgent.
+  </Step>
+  <Step title="Compare against previous periods">
+    Is availability improving or declining? A slow downward trend over several weeks signals a systemic issue, not a one-off.
+  </Step>
+  <Step title="Identify the worst-performing SKUs">
+    Sort by availability to find the products with the biggest gaps. These are costing you the most lost sales.
+  </Step>
+  <Step title="Cross-reference with supply metrics">
+    Check DC inbound and store inbound for those same SKUs. If supply is healthy but availability is low, the problem is at store level. If supply is also low, the root cause is upstream.
+  </Step>
+</Steps>
+
+## Dashboard controls
+
+<CardGroup cols={2}>
+  <Card title="Product Grouping" icon="layer-group">
+    View by Category, Subcategory, Brand, or SKU. Default: **SKU**.
+  </Card>
+  <Card title="Store Grouping" icon="store">
+    Break down by region, format, or individual store to isolate where gaps are concentrated.
+  </Card>
+  <Card title="Time Period" icon="calendar">
+    Set the analysis window. Weekly view is best for tracking recent changes. Longer periods smooth out noise.
+  </Card>
+  <Card title="Availability Threshold" icon="bullseye">
+    Filter to show only products below a certain availability level. Useful for focusing on problem areas.
+  </Card>
+</CardGroup>
+
+## What's on screen
+
+<CardGroup cols={3}>
+  <Card title="Availability Table" icon="table">
+    Every product with its current availability percentage, stores ranged, stores stocked, and the gap between them.
+  </Card>
+  <Card title="Trend Chart" icon="chart-line">
+    Availability over time for the selected product or group. Watch for gradual declines that signal a worsening supply issue.
+  </Card>
+  <Card title="Lost Sales Estimate" icon="sterling-sign">
+    The revenue impact of availability gaps. This puts a pound figure on the cost of each gap, which is powerful in buyer conversations.
+  </Card>
+</CardGroup>
+
+## Quick reference
+
+| Metric | Category | What it tells you |
+|--------|----------|-------------------|
+| **Availability %** | Critical | Percentage of ranged stores with product on shelf |
+| **Stores Ranged** | Distribution | Total stores authorised to carry the product |
+| **Stores Stocked** | Distribution | Stores that actually have the product on shelf right now |
+| **Availability Gap** | Critical | Difference between ranged and stocked. These are stores that should have it but don't |
+| **Lost Sales Value** | Commercial | Estimated revenue lost due to availability gaps |
+| **Lost Sales %** | Commercial | Lost sales as a percentage of potential sales. Higher means bigger missed opportunity |
+
+<Tip>
+  **Pro tip:** Pair this with the Depot Stock report. If availability is low and depot stock is also low, the problem is supply. If availability is low but depot stock is healthy, the problem is store replenishment. The fix is completely different in each case.
+</Tip>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Depot Stock" icon="warehouse" href="/dashboards/depot-stock">
+    Check whether low availability is caused by upstream supply issues
+  </Card>
+  <Card title="Commercial Alerts" icon="bell" href="/dashboards/commercial-alerts">
+    Set up alerts so you catch availability drops before they escalate
+  </Card>
+</CardGroup>

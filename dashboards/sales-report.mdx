@@ -1,0 +1,131 @@
+---
+title: Sales Report
+sidebarTitle: Sales Report
+description: "Deep dive into sales performance by product, store, and time period to understand exactly where revenue is coming from."
+---
+
+The Sales Report lets you **drill into the detail behind your numbers**. While the Top Line Report tells you what's changed, the Sales Report shows you exactly where the change is happening, at product, store, and time period level.
+
+<Frame caption="The Sales Report showing product-level sales breakdown with time period comparisons">
+  <img src="/images/top-line-report-dashboard.png" alt="Sales Report dashboard" />
+</Frame>
+
+## Watch: navigating the Sales Report
+
+<iframe
+  src="https://www.loom.com/embed/68d3c6e5f6f6435f9df9a6afec1dbdcc"
+  width="100%"
+  height="450"
+  frameBorder="0"
+  allowFullScreen
+></iframe>
+
+## Why it matters
+
+<Tabs>
+  <Tab title="Account Managers">
+    This is where you build your **buyer story**. When the Top Line Report flags a change, the Sales Report tells you which SKUs, stores, or time periods are driving it. You need this to walk into a meeting with specifics, not just "sales are down".
+  </Tab>
+  <Tab title="Category Controllers">
+    This is your **range review preparation tool**. Compare sales velocity across SKUs to identify which products earn their shelf space and which ones are candidates for delisting or repositioning.
+  </Tab>
+</Tabs>
+
+## When to use it
+
+| Trigger | What you're checking |
+|---------|---------------------|
+| **After reviewing the Top Line Report** | Which specific SKUs are driving the overall trend? |
+| **Range review preparation** | Sales velocity comparison across your product range |
+| **Promotional review** | Did the promotion actually lift sales, or just pull forward demand? |
+| **New product launch tracking** | Is the new SKU building momentum week on week? |
+
+## What to look for
+
+<AccordionGroup>
+  <Accordion title="A small number of SKUs driving most of the change" icon="bullseye">
+    This is common. If 2-3 SKUs account for most of the sales movement, focus your energy there. Check whether the change is driven by rate of sale (demand) or distribution (store count).
+  </Accordion>
+  <Accordion title="Sales growth in volume but not value" icon="scale-unbalanced">
+    This suggests **price erosion or promotional dependency**. You're selling more units but generating less revenue per unit. Check whether promotional activity is cannibalising full-price sales.
+  </Accordion>
+  <Accordion title="Strong rate of sale but flat total sales" icon="equals">
+    The product is performing well where it's stocked, but it's **not in enough stores**. This is your case for distribution expansion. Use the rate of sale figures to support a ranging request.
+  </Accordion>
+</AccordionGroup>
+
+## How to read it
+
+Follow this sequence to get from headline to insight:
+
+<Steps>
+  <Step title="Set your time period and comparison">
+    Choose the period you're investigating and what you're comparing against. Year on year is best for spotting real trends. Period on period catches recent shifts.
+  </Step>
+  <Step title="Sort by sales value">
+    Identify your top revenue drivers. These are the SKUs that matter most to your total number.
+  </Step>
+  <Step title="Check the variance column">
+    Which products are growing and which are declining? Sort by variance to find the biggest movers in either direction.
+  </Step>
+  <Step title="Drill into the outliers">
+    For any SKU with a significant change, ask: is this rate of sale (demand), distribution (store count), or both? The answer determines your next action.
+  </Step>
+</Steps>
+
+## Dashboard controls
+
+<CardGroup cols={2}>
+  <Card title="Product Grouping" icon="layer-group">
+    View by Category, Subcategory, Brand, or SKU. Start at category level to find the area of interest, then drill down to SKU.
+  </Card>
+  <Card title="Metric Selection" icon="gauge">
+    Switch between Sales Value, Sales Volume, Rate of Sale, and other commercial metrics. Default: **Sales Value**.
+  </Card>
+  <Card title="Time Period" icon="calendar">
+    Set the analysis window. Options include Week, 4 Week, 12 Week, Year to Date, and 52 Week rolling.
+  </Card>
+  <Card title="Comparison Period" icon="calendar-check">
+    Choose your baseline. "Previous Year" is most useful for removing seasonal effects.
+  </Card>
+</CardGroup>
+
+## What's on screen
+
+<CardGroup cols={3}>
+  <Card title="Product Table" icon="table">
+    The main panel. Every product row shows sales figures for the selected period with variance against comparison. Sortable by any column.
+  </Card>
+  <Card title="Variance Bars" icon="chart-bar">
+    Inline bars next to each product showing percentage change. Green bars grow right, red bars grow left. Spot the outliers instantly.
+  </Card>
+  <Card title="Time Series" icon="chart-line">
+    Click any product to see its sales trend over time. Current period in **blue**, comparison in **grey**. Look for inflection points.
+  </Card>
+</CardGroup>
+
+## Quick reference
+
+| Metric | Category | What it tells you |
+|--------|----------|-------------------|
+| **Sales Value** | Commercial | Total revenue for the selected period |
+| **Sales Volume** | Commercial | Total units sold. Useful for spotting price vs volume effects |
+| **Rate of Sale (Stores Ranged)** | Commercial | Units per store per week, across all stores that carry the product |
+| **Rate of Sale (Stores Stocked)** | Commercial | Units per store per week, only counting stores with stock on shelf |
+| **Average Price** | Commercial | Revenue divided by volume. Tracks pricing and promotional impact |
+| **Stores Ranged** | Distribution | Number of stores authorised to carry the product |
+
+<Tip>
+  **Pro tip:** Compare Rate of Sale (Stores Ranged) against Rate of Sale (Stores Stocked). A big gap between the two means you have stores that are ranged but not actually stocking the product, which is an availability problem, not a demand problem.
+</Tip>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Availability Report" icon="shelves" href="/dashboards/availability-report">
+    Investigate why stores that should have your product don't
+  </Card>
+  <Card title="Top Line Report" icon="chart-line" href="/dashboards/top-line-report">
+    Go back to the headline view for overall context
+  </Card>
+</CardGroup>
